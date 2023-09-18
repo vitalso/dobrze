@@ -1,0 +1,118 @@
+/* Font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;800&family=Manrope:wght@400;700&family=Saira:wght@300;700&family=Sedgwick+Ave+Display&family=Anton&family=DM+Sans:opsz@9..40&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom font */
+@font-face {
+    font-family: 'Gilroy-Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Gilroy-Bold'), url('../assets/fonts/') format('woff');
+}
+
+/* Icons */
+.icon--arrow {
+    width: 17px;
+    height: 18px;
+    background: url(../assets/icons/arrow-right.svg) no-repeat;
+}
+
+.icon--arrow-down {
+    background: url(../assets/icons/arrow-down.svg) no-repeat;
+}
+
+.icon--fb {
+    background: url(../assets/icons/fb.svg) no-repeat;
+}
+
+.icon--tt {
+    background: url(../assets/icons/tt.svg) no-repeat;
+}
+
+.icon--inst {
+    background: url(../assets/icons/instagram.svg) no-repeat;
+}
+
+.icon--price {
+    background: url(../assets/icons/price.svg) no-repeat;
+}
+
+.icon--rating {
+    background: url(../assets/icons/rating.svg) no-repeat;
+}
+
+.icon--fb-rating {
+    background: url(../assets/icons/rating-fb.svg) no-repeat;
+}
+
+.icon--messenger {
+    background: url(../assets/icons/messenger.svg) no-repeat;
+}
+
+.icon--casa {
+    background: url(../assets/icons/icon-casa.svg) no-repeat;
+}
+
+.icon--fast {
+    background: url(../assets/icons/icon-fast.svg) no-repeat;
+}
+
+/* Waves background */
+.waves {
+    background: url(../assets/images/bg-waves.svg) center top/cover no-repeat;
+}
+
+/* Custom placeholder for input */
+form input[required]:valid + p , form textarea[required]:valid + p {
+    display: none;
+}
+
+#switch:checked + div span:last-child {
+    color: #fff;
+}
+
+#switch:not(:checked) + div span:first-child {
+    color: #fff;
+}
+
+#switch:checked + div span:first-child svg {
+    fill: #000;
+}
+
+#switch:checked + div span:last-child svg {
+    fill: #fff;
+}
+
+#switch:checked + .peer:after {
+    max-width: calc(50% - 4px) !important;
+}
+
+input[name="service"]:checked + span {
+    background: #fff !important;
+    border-color: #F03C48 !important;
+}
+
+input[name="service"]:checked + span div {
+    border-color: #F03C48 !important;
+}
+
+input[name="service"]:checked + span div:after {
+    opacity: 1 !important;
+}
+
+input[name="service"]:checked + span div + span {
+    color: #F03C48 !important;
+}
+
+/* Accordion */
+p[aria-expanded="true"] {
+    color: #F03C48 !important;
+}
+
+    p[aria-expanded="true"] svg {
+        transform: rotate(180deg);
+        stroke: #F03C48 !important;
+    }
